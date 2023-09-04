@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
     display: none;
     scroll-behavior: smooth;
     height: 2000px;
-}
+}/* 
 .back{
     position: absolute;
     background-size: cover;
@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-/* .texto>h1,
+.texto>h1,
 p { 
 } */
 
@@ -82,4 +82,56 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width:667px) {
+    body{
+    background-color: blue;
+
+    }
+    .back{
+        position: fixed;
+        background-size: cover;
+        height: 100vh;
+        top: 0;
+        left: -130%;
+        z-index: -100;
+    }
+    .fundo {
+        height: 100vh;
+        color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabeca {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    .titulo{        
+        font: 20px "Black Ops One", "arial","Helvetica","sans-self";
+    }
+    .titulo2{
+        color: rgba(189, 252, 252, 0.911);
+
+        font: 30px "DM Serif Display", "arial","Helvetica","sans-self";
+        letter-spacing: 5dvw;    
+        border-radius: 5%;
+        padding-left:10%;
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+    }
+    button{
+        border-radius: 5%;
+        padding: 10px;
+        border: none;
+        margin-top: 10%;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgba(174, 202, 202, 0.39);
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        color: white;
+        font: 14px "arial","Helvetica","sans-self";
+        font-size: 120%;
+    }
 }
