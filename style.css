@@ -1,17 +1,20 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=DM+Serif+Display:ital@1&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
     display: none;
-    scroll-behavior: smooth;
     height: 2000px;
-}/* 
+}
+
+/* 
 .back{
     position: absolute;
     background-size: cover;
@@ -85,19 +88,20 @@ p {
 }
 
 @media only screen and (max-width:667px) {
-    body{
-    background-color: blue;
-
+    body {
+        background-color: blue;
     }
-    .back{
+
+    .back {
         position: fixed;
         background-size: cover;
         height: 100vh;
         min-width: 100%;
-        top:0;
+        top: 0;
         right: -110%;
         z-index: -100;
     }
+
     .fundo {
         height: 100vh;
         color: rgba(245, 245, 245, 0.842);
@@ -105,22 +109,84 @@ p {
         justify-content: center;
         align-items: center;
     }
+
     .cabeca {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-    .titulo{        
-        font: 25px "Black Ops One", "arial","Helvetica","sans-self";
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
-    .titulo2{
-        font: 30px "DM Serif Display", "arial","Helvetica","sans-self";
-        letter-spacing: 3dvw;    
+
+    .titulo {
+        font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
+    }
+
+    .titulo2 {
+        font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
+        letter-spacing: 3dvw;
         border-radius: 5%;
-        padding-left:10%;
+        padding-left: 10%;
         box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
     }
-    button{
+
+    .ancora {
+        margin-top: 40%;
+        border-radius: 50%;
+        padding: 2px;
+        background-color: rgba(245, 245, 245, 0.342);
+        box-shadow: 0px 0px 10px 5px rgba(164, 181, 182, 0.705);
+    }
+    .corpo{
+        height: 100vh;
+        background-color: black;
+        color: aqua;
+    }
+    img{
+        height: 99%;
+    }
+}
+
+@media only screen and (min-width:668px) and (max-width:1024px) {
+    body {
+        background-color: blue;
+
+    }
+
+    .back {
+        position: fixed;
+        background-size: cover;
+        height: 100vh;
+        top: 0;
+        right: -110%;
+        z-index: -100;
+    }
+
+    .fundo {
+        height: 100vh;
+        color: rgba(245, 245, 245, 0.842);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabeca {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .titulo {
+        font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
+    }
+
+    .titulo2 {
+        font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
+        letter-spacing: 3dvw;
+        border-radius: 5%;
+        padding-left: 10%;
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+    }
+
+    button {
         border-radius: 5%;
         padding: 10px;
         border: none;
@@ -130,105 +196,63 @@ p {
         background-color: rgba(174, 202, 202, 0.39);
         box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
         color: white;
-        font: 14px "arial","Helvetica","sans-self";
+        font: 14px "arial", "Helvetica", "sans-self";
         font-size: 120%;
     }
 }
-@media only screen and (min-width:668px) and (max-width:1024px) {
-    body{
+
+@media only screen and (min-width:1025px) {
+    body {
         background-color: blue;
-    
-        }
-        .back{
-            position: fixed;
-            background-size: cover;
-            height: 100vh;
-            top: 0;
-            right: -110%;
-            z-index: -100;
-        }
-        .fundo {
-            height: 100vh;
-            color: rgba(245, 245, 245, 0.842);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .cabeca {
+
+    }
+
+    .back {
+        position: fixed;
+        background-size: cover;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: -100;
+    }
+
+    .fundo {
+        height: 100vh;
+        color: rgba(245, 245, 245, 0.842);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabeca {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-        .titulo{        
-            font: 25px "Black Ops One", "arial","Helvetica","sans-self";
-        }
-        .titulo2{
-            font: 30px "DM Serif Display", "arial","Helvetica","sans-self";
-            letter-spacing: 3dvw;    
-            border-radius: 5%;
-            padding-left:10%;
-            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-        }
-        button{
-            border-radius: 5%;
-            padding: 10px;
-            border: none;
-            margin-top: 10%;
-            text-align: center;
-            text-decoration: none;
-            background-color: rgba(174, 202, 202, 0.39);
-            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-            color: white;
-            font: 14px "arial","Helvetica","sans-self";
-            font-size: 120%;
-        }
-}
-@media only screen and (min-width:1025px){
-    body{
-        background-color: blue;
-    
-        }
-        .back{
-            position: fixed;
-            background-size: cover;
-            height: 100vh;
-            top: 0;
-            right: 0;
-            z-index: -100;
-        }
-        .fundo {
-            height: 100vh;
-            color: rgba(245, 245, 245, 0.842);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .cabeca {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+
+    .titulo {
+        font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
     }
-        .titulo{        
-            font: 25px "Black Ops One", "arial","Helvetica","sans-self";
-        }
-        .titulo2{
-            font: 30px "DM Serif Display", "arial","Helvetica","sans-self";
-            letter-spacing: 3dvw;    
-            border-radius: 5%;
-            padding-left:10%;
-            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-        }
-        button{
-            border-radius: 5%;
-            padding: 10px;
-            border: none;
-            margin-top: 10%;
-            text-align: center;
-            text-decoration: none;
-            background-color: rgba(174, 202, 202, 0.39);
-            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-            color: white;
-            font: 14px "arial","Helvetica","sans-self";
-            font-size: 120%;
-        }
+
+    .titulo2 {
+        font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
+        letter-spacing: 3dvw;
+        border-radius: 5%;
+        padding-left: 10%;
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+    }
+
+    button {
+        border-radius: 5%;
+        padding: 10px;
+        border: none;
+        margin-top: 10%;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgba(174, 202, 202, 0.39);
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+        color: white;
+        font: 14px "arial", "Helvetica", "sans-self";
+        font-size: 120%;
+    }
 }
