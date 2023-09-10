@@ -76,29 +76,20 @@ body::-webkit-scrollbar {
 p { 
 } */
 
-.foto {
-    color: white;
-    font: 24px arial;
-    background-color: black;
-    height: 50vh;
-    width: 70dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-@media only screen and (max-width:667px) {
+@media only screen and (max-width:750px) {
     body {
         background-color: blue;
+
     }
 
     .back {
-        position: fixed;
+        position: absolute;
         background-size: cover;
         height: 100vh;
         min-width: 100%;
         top: 0;
-        right: -110%;
+        right: -90%;
         z-index: -100;
     }
 
@@ -111,6 +102,9 @@ p {
     }
 
     .cabeca {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -135,81 +129,25 @@ p {
         background-color: rgba(245, 245, 245, 0.342);
         box-shadow: 0px 0px 10px 5px rgba(164, 181, 182, 0.705);
     }
-    .corpo{
-        height: 100vh;
+
+    .corpo {
+        display: flex;
+        align-items: center;
+        justify-items: center;
         background-color: black;
         color: aqua;
     }
-     h2{
-        font: 50px  arial;
-    }
-    .foto{
-        width: 100%;
-    }
-   
-}
-@media only screen and (min-width:668px)and (max-width:924px) {
-    body {
-        background-color: blue;
-    }
-
-    .back {
-        position: fixed;
-        background-size: cover;
-        height: 100vh;
+    .conteudo{
         min-width: 100%;
-        top: 0;
-        right: -110%;
-        z-index: -100;
     }
 
-    .fundo {
-        height: 100vh;
-        color: rgba(245, 245, 245, 0.842);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    .texto {}
 
-    .cabeca {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .titulo {
-        font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
-    }
-
-    .titulo2 {
-        font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
-        letter-spacing: 3dvw;
-        border-radius: 5%;
-        padding-left: 10%;
-        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-    }
-
-    .ancora {
-        margin-top: 40%;
-        border-radius: 50%;
-        padding: 2px;
-        background-color: rgba(245, 245, 245, 0.342);
-        box-shadow: 0px 0px 10px 5px rgba(164, 181, 182, 0.705);
-    }
-    .corpo{
-        height: 100vh;
-        background-color: black;
-        color: aqua;
-    }
-    h2{
-        font: 50px  arial;
-    }
-    .foto{
+    img {
         width: 100%;
     }
-    img{
-    }
 }
+
 
 @media only screen and (min-width:924px) and (max-width:1024px) {
     body {
