@@ -84,7 +84,7 @@ p {
     }
 
     .back {
-        position: absolute;
+        position:fixed ;
         background-size: cover;
         height: 100vh;
         min-width: 100%;
