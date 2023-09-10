@@ -11,7 +11,6 @@
 
 body::-webkit-scrollbar {
     display: none;
-    height: 2000px;
 }
 
 /* 
@@ -84,13 +83,12 @@ p {
     }
 
     .back {
-        position:fixed ;
-        background-size: cover;
+        position:absolute;
         height: 100vh;
         min-width: 100%;
         top: 0;
-        right: -90%;
-        z-index: -100;
+        right:0;
+        z-index: -100; 
     }
 
     .fundo {
@@ -131,19 +129,42 @@ p {
     }
 
     .corpo {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        background-color: black;
-        color: aqua;
-    }
-    .conteudo{
+        background:rgba(0,27,42,1) 100%;
         min-width: 100%;
     }
+    .conteudo{
+    }
 
-    .texto {}
-
+    .texto {
+        height: 100vh;
+        padding: 1.5em 3.5em 3.5em 3.5em;
+        text-align: justify;
+    }
+    .lorem{
+        color: white;
+        font:14px arial;
+        font-weight:400;
+        border-radius: 0px 0px 10px 10px;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.336);
+    }
+    button{
+        display: flex;
+        margin: auto;
+        border: none;
+        margin-top: 1.5%;
+        padding: 0.5em;
+        border-radius: 20px;
+        color: #011826;
+        background-color:#0597F2;
+        font:16px arial;
+        font-weight: bolder;
+    }
+    a{
+        text-decoration: none;
+    }
     img {
+        border-radius: 10px 10px 0px 0px;
         width: 100%;
     }
 }
