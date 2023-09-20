@@ -9,9 +9,7 @@
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+body::-webkit-scrollbar {}
 
 /* 
 .back{
@@ -83,12 +81,12 @@ p {
     }
 
     .back {
-        position:absolute;
+        position: absolute;
         height: 100vh;
         min-width: 100%;
         top: 0;
-        right:0;
-        z-index: -100; 
+        right: 0;
+        z-index: -100;
     }
 
     .fundo {
@@ -132,25 +130,28 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background:rgba(0,27,42,1) 100%;
+        background: rgba(0, 27, 42, 1) 100%;
         min-width: 100%;
     }
-    .conteudo{
-    }
+
+    .conteudo {}
 
     .texto {
         padding: 1.5em 1.5em 1.5em 1.5em;
         text-align: justify;
     }
-    .lorem{
+
+    .lorem {
+        height: 60vh;
         color: white;
-        font:14px arial;
-        font-weight:400;
+        font: 14px arial;
+        font-weight: 400;
         border-radius: 0px 0px 10px 10px;
         padding: 1em;
         background-color: rgba(255, 255, 255, 0.336);
     }
-    button{
+
+    button {
         display: flex;
         margin: auto;
         border: none;
@@ -158,20 +159,23 @@ p {
         padding: 0.5em;
         border-radius: 20px;
         color: #011826;
-        background-color:#0597F2;
-        font:16px arial;
+        background-color: #0597F2;
+        font: 16px arial;
         font-weight: bolder;
     }
-    a{
+
+    a {
         text-decoration: none;
     }
+
     .Videos {
         width: 100%;
         top: 0;
-        right: 0; 
+        right: 0;
         border-radius: 10px 10px 0px 0px;
     }
-    img{
+
+    img {
         border-radius: 10px 10px 0px 0px;
         width: 100%;
     }
