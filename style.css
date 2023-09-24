@@ -9,83 +9,17 @@
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {}
-
-/* 
-.back{
-    position: absolute;
-    background-size: cover;
-    min-height: 100%;
-    min-width: 100%;
-    top:0;
-    z-index: -100;
-}
-.titulo{
-    font: 50px "Black Ops One", "arial","Helvetica","sans-self";
-}
-.titulo2{
-    font: 70px "DM Serif Display", "arial","Helvetica","sans-self";
-    letter-spacing: 5dvw;    
-    padding-left:10%;
-}
-.fundo {
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.cabeca {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.corpo {
-    border: 1px solid black;
-    background-color: blue;
-    height: 100vh;
-}
-
-.conteudo {
-    background-color: aqua;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-
-}
-
-.texto {
-    width: 70dvh;
-    background-color: white;
-    padding: 10px;
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-}
-
-.texto>h1,
-p { 
-} */
-
-
-@media only screen and (max-width:750px) {
-    body {
-        background-color: blue;
-
-    }
-
+@media only screen and (max-width:503px) {
     .back {
         position: absolute;
         height: 100vh;
         min-width: 100%;
         top: 0;
-        right: 0;
+        right:0;
         z-index: -100;
     }
 
@@ -142,7 +76,7 @@ p {
     }
 
     .lorem {
-        height: 60vh;
+        height:50vh;
         color: white;
         font: 14px arial;
         font-weight: 400;
@@ -182,72 +116,12 @@ p {
 }
 
 
-@media only screen and (min-width:924px) and (max-width:1024px) {
-    body {
-        background-color: blue;
-
-    }
+@media only screen and (min-width:504px) and (max-width:1024px) {
 
     .back {
-        position: fixed;
-        background-size: cover;
+        position: absolute;
         height: 100vh;
-        top: 0;
-        right: -110%;
-        z-index: -100;
-    }
-
-    .fundo {
-        height: 100vh;
-        color: rgba(245, 245, 245, 0.842);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cabeca {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .titulo {
-        font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
-    }
-
-    .titulo2 {
-        font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
-        letter-spacing: 3dvw;
-        border-radius: 5%;
-        padding-left: 10%;
-        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-    }
-
-    button {
-        border-radius: 5%;
-        padding: 10px;
-        border: none;
-        margin-top: 10%;
-        text-align: center;
-        text-decoration: none;
-        background-color: rgba(174, 202, 202, 0.39);
-        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-        color: white;
-        font: 14px "arial", "Helvetica", "sans-self";
-        font-size: 120%;
-    }
-}
-
-@media only screen and (min-width:1025px) {
-    body {
-        background-color: blue;
-
-    }
-
-    .back {
-        position: fixed;
-        background-size: cover;
-        height: 100vh;
+        min-width: 100%;
         top: 0;
         right: 0;
         z-index: -100;
@@ -265,31 +139,181 @@ p {
         display: flex;
         align-items: center;
         flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .titulo {
-        font: 25px "Black Ops One", "arial", "Helvetica", "sans-self";
+        font: 35px "Black Ops One", "arial", "Helvetica", "sans-self";
     }
 
     .titulo2 {
-        font: 30px "DM Serif Display", "arial", "Helvetica", "sans-self";
+        font: 50px "DM Serif Display", "arial", "Helvetica", "sans-self";
         letter-spacing: 3dvw;
         border-radius: 5%;
         padding-left: 10%;
         box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
     }
 
-    button {
-        border-radius: 5%;
-        padding: 10px;
-        border: none;
-        margin-top: 10%;
-        text-align: center;
-        text-decoration: none;
-        background-color: rgba(174, 202, 202, 0.39);
-        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
-        color: white;
-        font: 14px "arial", "Helvetica", "sans-self";
-        font-size: 120%;
+    .ancora {
+        margin-top: 40%;
+        border-radius: 50%;
+        padding: 2px;
+        background-color: rgba(245, 245, 245, 0.342);
+        box-shadow: 0px 0px 10px 5px rgba(164, 181, 182, 0.705);
     }
+
+    .corpo {
+        background: rgba(0, 27, 42, 1) 100%;
+        display: flex;
+    }
+    
+    .conteudo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .texto {
+        width: 45vw;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        text-align: justify;
+    }
+    
+    .lorem {
+
+        color: white;
+        font: 14px arial;
+        font-weight: 400;
+        border-radius: 0px 0px 10px 10px;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.336);
+    }
+
+    button {
+        display: flex;
+        margin: auto;
+        border: none;
+        margin-top: 1.5%;
+        padding: 0.5em;
+        border-radius: 20px;
+        color: #011826;
+        background-color: #0597F2;
+        font: 16px arial;
+        font-weight: bolder;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .Videos {
+        width: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    
 }
+
+@media only screen and (min-width:1025px) {
+    .back {
+        position: absolute;
+        background-size:cover;
+        top: 0;
+        right: 0;
+        z-index: -100;
+    }
+
+    .fundo {
+        height: 100vh;
+        color: rgba(245, 245, 245, 0.911);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabeca {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .titulo {
+        font: 45px "Black Ops One", "arial", "Helvetica", "sans-self";
+    }
+
+    .titulo2 {
+        font: 60px "DM Serif Display", "arial", "Helvetica", "sans-self";
+        letter-spacing: 3dvw;
+        border-radius: 15px;
+        padding-left: 10%;
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.705);
+    }
+
+    .ancora {
+        margin-top: 40%;
+        border-radius: 50%;
+        padding: 2px;
+        background-color: rgba(245, 245, 245, 0.342);
+        box-shadow: 0px 0px 10px 5px rgba(164, 181, 182, 0.705);
+    }
+
+    .corpo {
+        background: rgba(0, 27, 42, 1) 100%;
+        display: flex;
+    }
+    
+    .conteudo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .texto {
+        width: 45vw;
+        padding: 1.5em 1.5em 1.5em 1.5em;
+        text-align: justify;
+    }
+    
+    .lorem {
+        color: white;
+        font: 14px arial;
+        font-weight: 400;
+        border-radius: 0px 0px 10px 10px;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.336);
+    }
+
+    button {
+        display: flex;
+        margin: auto;
+        border: none;
+        margin-top: 1.5%;
+        padding: 0.5em;
+        border-radius: 20px;
+        color: #011826;
+        background-color: #0597F2;
+        font: 16px arial;
+        font-weight: bolder;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .Videos {
+        width: 100%;
+        top: 0;
+        right: 0;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+ }
