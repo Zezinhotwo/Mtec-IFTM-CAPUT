@@ -258,7 +258,7 @@ body::-webkit-scrollbar {
     }
     .FotoPg{
         position: absolute; 
-        top: -230%;
+        top: -250%;
         right: 0%;
         z-index: 0;
     }
