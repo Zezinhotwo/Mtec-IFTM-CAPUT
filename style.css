@@ -116,12 +116,10 @@ body::-webkit-scrollbar {
     .conteudoPg {
         background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(15, 15, 201, 1) 35%, rgba(0, 212, 255, 1) 100%);
         height: 100vh;
-        
     }
 
     .FotoPg {
         position: relative;
-        height: 100vh;
         min-width: 100%;
         top: 0;
         right: 0;
