@@ -112,7 +112,7 @@ body::-webkit-scrollbar {
     }
     /* identaçao das paginas de conteudo Aqui em BAIXO */
     .conteudoPg{
-        background: rgba(0, 27, 42, 1) 100%;
+        background: rgb(255, 3, 3) 100%;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -121,6 +121,7 @@ body::-webkit-scrollbar {
     }
     .FotoPg{
         position: absolute;
+        top: -25%;
         z-index: 0;
     }
     .dados{
